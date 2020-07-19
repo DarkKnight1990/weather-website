@@ -15,8 +15,9 @@ const forecast = (lat, long, callback) => {
                 undefined, 
                 body.current.weather_descriptions[0] + 
                 '. The actual temperature is ' +
-                body.current.temperature + ', but it feels like ' +
-                body.current.feelslike + '.'
+                body.current.temperature + ', and it feels like ' +
+                body.current.feelslike + '. The humidity is ' +
+                body.current.humidity + '.'
             );
         }
     });
